@@ -2,7 +2,6 @@ import { NextResponse, type NextRequest } from 'next/server'
 import { timingSafeEqual } from 'node:crypto'
 import { createAdminClient } from '@/lib/supabase/admin'
 
-export const dynamic = 'force-dynamic'
 
 function validSecret(header: string | null): boolean {
   const secret = process.env.CRON_SECRET

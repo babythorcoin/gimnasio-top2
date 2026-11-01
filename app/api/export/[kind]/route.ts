@@ -5,7 +5,6 @@ import { todayIn } from '@/lib/format'
 import { GYM_COLUMNS, PAYMENT_METHOD_LABEL, PAYMENT_STATUS_LABEL, MEMBERSHIP_LABEL, type Gym, type MembershipStatus, type PaymentMethod, type PaymentStatus } from '@/lib/domain'
 import { loadAttendance, loadMemberships, loadNames, loadPayments, loadStudents } from '@/lib/reports'
 
-export const dynamic = 'force-dynamic'
 const NO_STORE = { 'Cache-Control': 'no-store' }
 
 /** Owner-only CSV exports. The gym comes from the session profile; RLS applies to every query. */
